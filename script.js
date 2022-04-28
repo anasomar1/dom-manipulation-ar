@@ -32,3 +32,6 @@ body.appendChild(img);
 // *** تعديل class العناصر
 headerById.classList.add("red");
 paragraph2.classList.remove("paragraph");
+
+// *** تعديل ال Styling
+list.style.backgroundColor = "green";
