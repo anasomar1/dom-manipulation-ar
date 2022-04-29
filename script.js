@@ -1,37 +1,37 @@
 // *** اختيار العناصر
+const headerById = document.getElementById("header"); // عن طريق الآي دي
+const paragraph = document.querySelector("p"); // عن طريق اسم العنصر
+const paragraph2 = document.querySelector(".paragraph"); // عن طريق الكلاس
+const parahraphs = document.querySelectorAll("p"); // تحديد كافة العناصر
+const header = document.querySelector("#header"); // عن طريق الآي دي
+const item1 = document.querySelector("ul li"); // عناصر بداخل عناصر
+const itemsList = document.querySelector("ul");
 
-// عن طريق الآي دي
-const header = document.getElementById("header");
-// عن طريق query selector
-const paragraph = document.querySelector("p");
-const paragraph2 = document.querySelector(".paragraph");
-const paragraphs = document.querySelectorAll("p");
-const headerById = document.querySelector("#header");
-const list = document.querySelector("ul");
-
-// *** إنشاء واضافة وحذف العناصر
+// *** إنشاء، اضافة وحذف العناصر
 const body = document.body;
-const h1 = document.createElement("h1"); // لإنشاء عنصر
-body.append("اضافة من جافاسكريبت"); // لإضافة عناصر أو كلام
-body.appendChild(h1); // لإضافة عنصر
-paragraph.remove(); // لحذف عنصر
+const h1 = document.createElement("h1"); // انشاء عنصر
+body.appendChild(h1); // اضافة عنصر
+body.append("تمت الاضافة عن طريق جافا سكريبت"); // اضافة عنصر او كلام
+paragraph.remove();
 
-// *** تعديل محتوى العناصر
-headerById.textContent = "تم التعديل على الترويسة";
-headerById.innerText = "تم التعديل مرة اخرى";
-headerById.innerHTML = "<strong>نص غامق</strong>";
+// تعديل محتوى العناصر
+headerById.textContent = "ترويسة معدلة"; //تعديل النص
+headerById.innerText = "ترويسة معدلة مرة اخرى"; // تعديل النص
+headerById.innerHTML = "<strong> ترويسة </strong>"; // تعديل ال HTML
 
-// *** تعديل سمات العناصر
+// تعديل سمات العناصر
 const img = document.createElement("img");
-img.setAttribute(
-  "src",
-  "https://cnn-arabic-images.cnn.io/cloudinary/image/upload/w_1000,c_scale,q_auto/cnnarabic/2020/09/27/images/166028.jpg"
-);
 body.appendChild(img);
+img.src = // تعديل السمة
+  "https://cnn-arabic-images.cnn.io/cloudinary/image/upload/w_1000,c_scale,q_auto/cnnarabic/2020/09/27/images/166028.jpg";
 
-// *** تعديل class العناصر
-headerById.classList.add("red");
-paragraph2.classList.remove("paragraph");
+// تعديل الكلاس للعناصر
+paragraph2.classList.remove("paragraph"); // حذف كلاس
+itemsList.classList.add("red"); // اضافة كلاس
 
-// *** تعديل ال Styling
-list.style.backgroundColor = "green";
+// تعديل styling للعناصر
+headerById.style.backgroundColor = "green"; // تعديل لون الخلفية
+const box = document.querySelector(".box");
+box.style.backgroundColor = "yellow";
+box.style.width = "100px"; // تعديل العرض
+box.style.height = "100px"; // تعديل الارتفاع
